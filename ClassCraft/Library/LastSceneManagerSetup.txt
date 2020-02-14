@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Menu Folder/Menu.unity
+- path: Assets/School Classroom/Demo.unity
   isLoaded: 1
   isActive: 1
