@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/* using UnityEngine;
 using UnityEngine.UI;
 
 public class TesseractDemoScript : MonoBehaviour
@@ -58,4 +58,4 @@ public class TesseractDemoScript : MonoBehaviour
             rectTransform.rect.width * _tesseractDriver.GetHighlightedTexture().height / _tesseractDriver.GetHighlightedTexture().width);
         outputImage.texture = _tesseractDriver.GetHighlightedTexture();
     }
-}
+} */

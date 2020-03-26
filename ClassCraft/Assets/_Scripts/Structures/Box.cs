@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Runtime.InteropServices;
+using System.Runtime.InteropServices;[StructLayout(LayoutKind.Sequential)]
 
-[StructLayout(LayoutKind.Sequential)]
-public struct Box
-{
+public struct Box {
     public Int32 x;
     public Int32 y;
     public Int32 w;

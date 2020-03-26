@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Classroom.unity
     guid: 3a0f2fd6a5de56c40b02af11463c9c7d
+  - enabled: 1
+    path: Assets/_Scenes/Tesseract Test.unity
+    guid: d5b5637bb501f5a49902a0e1a67be312
   m_configObjects: {}

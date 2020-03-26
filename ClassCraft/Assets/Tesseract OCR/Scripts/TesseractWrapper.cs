@@ -1,4 +1,4 @@
-using System;
+/* using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -257,4 +257,4 @@ public class TesseractWrapper
         TessBaseAPIDelete(_tessHandle);
         _tessHandle = IntPtr.Zero;
     }
-}
+} */
