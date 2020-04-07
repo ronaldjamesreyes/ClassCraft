@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Classroom.unity
     guid: 3a0f2fd6a5de56c40b02af11463c9c7d
+  - enabled: 1
+    path: Assets/_Scenes/MathWorld.unity
+    guid: a4b3b9eccaa7cdc42b10505e6d63c92d
+  - enabled: 1
+    path: Assets/_Scenes/LessonWorld.unity
+    guid: 81cccd498176b6844b8d15ecfc250e89
   m_configObjects: {}

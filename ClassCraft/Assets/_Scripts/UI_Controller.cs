@@ -21,16 +21,16 @@ public class UI_Controller : MonoBehaviour
         Exit.transform.gameObject.SetActive(false);
     }
 
-    public void butMathClicked()
+    public void butMathClicked(string MathWorld)
     {
         Debug.Log("Button Math clicked");
-		SceneManagement.LoadScene(MathWorld);
+		SceneManager.LoadScene(MathWorld);
     }
 
-    public void butLesson()
+    public void butLesson(string LessonWorld)
     {
         Debug.Log("Button select clicked");
-		SceneManagement.LoadScene(LessonWorld);
+		SceneManager.LoadScene(LessonWorld);
     }
 
     public void butExitClicked()
