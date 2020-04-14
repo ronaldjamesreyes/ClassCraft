@@ -1,50 +1,50 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class GenerateNumbers : MonoBehaviour
 {
-    public GameObject TextBox1;
-    public GameObject TextBox2;
-    public int FirstNumber;
-    public int SecondNumber;
-    public int Answer;
-	public Text scoreDisplayText;
+    // public GameObject TextBox2;
+    // public GameObject TextBox2;
+    private int num1;
+    private int num2;
+    private int answer;
+    private string _text = "";
+    public int numRange;
+	public TextMeshPro scoreDisplayText;
 	private int playerScore;
 	//private RandomGenerator dataController;
 
+    public void Start() {
+        RandomGenerate();
+    }
 
-    // Start is called before the first frame update
-    public void RandomGenerate()
-	{
+    public void RandomGenerate() {
 		//dataController = FindObjectOfType<RandomGenerator>();
         //currentRoundData = dataController.GetCurrentRoundData();
 		
 		
-        FirstNumber = Random.Range(1, 10);
-        SecondNumber = Random.Range(1, 10);
-        Answer = FirstNumber + SecondNumber;
-        if (Answer <= 10)
-        {
-            TextBox1.GetComponent<Text>().text = "" + FirstNumber;
-            TextBox2.GetComponent<Text>().text = "" + SecondNumber;
-        }
-        else
-        {
-            RandomGenerate();
-        }		
+        num1 = Random.Range(1, numRange);
+        num2 = Random.Range(1, numRange-num1);
+        answer = num1 + num2;
+
+        _text = num1 + " + " + num2 + " = ?";
+        // TextBox1.GetComponent<Text>().text = "" + FirstNumber;
+        // TextBox2.GetComponent<Text>().text = "" + SecondNumber;
 	}
+
+    public void LateUpdate() {
+        scoreDisplayText.text = _text;
+    }
 	
-	    public void AnswerButtonClicked()
-    {
-        if (Answer == Answer)
-        {
-            //playerScore += currentRoundData.pointsAddedForCorrectAnswer;
+    public void answerButtonClicked() {
+        if (answer == answer) {
+            //playerScore += currentRoundData.pointsAddedForCorrectanswer;
             //scoreDisplayText.text = "Score: " + playerScore.ToString();
         }
-        else 
-        {
+        else {
 			//text dispaly incorect???
             //Loop to the start of the scene
         }
