@@ -9,11 +9,14 @@
 // Enabled option set to true in its Advanced import settings.
 
 using UnityEngine;
+using UnityEngine.EventSystems;
 using System.Collections;
 
 public class PixelChanger : MonoBehaviour
 {
-    public Camera cam;
+    private Camera cam;
+    public GvrTrackedController Controller;
+    public GameObject Reticle;
     public int widthMod = 0;
 
     void Start()
@@ -23,27 +26,44 @@ public class PixelChanger : MonoBehaviour
 
     void Update()
     {
-        if (!Input.GetMouseButton(0))
+        var device = Controller.ControllerInputDevice;
+
+        if (!device.GetButton(GvrControllerButton.TouchPadButton))
+        {
             return;
+        }
 
         RaycastHit hit;
-        if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
+
+        var ry = new Ray(Reticle.transform.position, Reticle.transform.forward);
+
+        if (!Physics.Raycast(ry, out hit))
+        {
             return;
+        }
 
         Renderer rend = hit.transform.GetComponent<Renderer>();
         MeshCollider meshCollider = hit.collider as MeshCollider;
 
         if (rend == null || rend.sharedMaterial == null || rend.sharedMaterial.mainTexture == null || meshCollider == null)
+        {
             return;
+        }
 
         Texture2D tex = rend.material.mainTexture as Texture2D;
         Vector2 pixelUV = hit.textureCoord;
         pixelUV.x *= tex.width;
         pixelUV.y *= tex.height;
 
-        for (int x = -widthMod; x <= widthMod; x++ ) {
-            for (int y = -widthMod; y <= widthMod; y++) {
-                tex.SetPixel((int)pixelUV.x + x, (int)pixelUV.y + y, Color.white);
+        for (int x = -widthMod; x <= widthMod; x++ )
+        {
+            for (int y = -widthMod; y <= widthMod; y++)
+            {
+                tex.SetPixel(
+                    (int)pixelUV.x + x,
+                    (int)pixelUV.y + y,
+                    Color.white
+                );
             }
         }
         tex.Apply();
