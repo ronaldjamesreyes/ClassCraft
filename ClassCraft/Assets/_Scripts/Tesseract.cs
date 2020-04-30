@@ -11,6 +11,7 @@ public class Tesseract : MonoBehaviour {
     private Texture2D _texture;
 
     private void Start() {
+        Recognize();
     }
 
     public void Recognize() {
@@ -21,7 +22,7 @@ public class Tesseract : MonoBehaviour {
 
         _texture = texture;
         _text = "";
-        _text = _text + "Tesseract is working";
+        // _text = _text + "Tesseract is working";
         _tesseractDriver.Setup(OnSetupCompleteRecognize);
     }
 

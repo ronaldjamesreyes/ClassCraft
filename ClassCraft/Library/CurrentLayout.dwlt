@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 265
     height: 947
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -95,7 +95,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Phoenix
+  m_LastLoadedLayoutName: 
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 231
+  controlID: 76
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 142
+  controlID: 77
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,8 +187,8 @@ MonoBehaviour:
     y: 0
     width: 384
     height: 947
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -347,20 +347,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/StreamingAssets
+    - Assets/_Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/StreamingAssets
+  - Assets/_Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Geekdom\_Code\GitHub\ClassCraft\ClassCraft
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 98}
-    m_SelectedIDs: 02290000
-    m_LastClickedID: 10498
-    m_ExpandedIDs: 00000000e6280000022900005a2a0000da2c0000762d0000a42e0000ce2e00001a3900001c39000000ca9a3b
+    scrollPos: {x: 0, y: 111}
+    m_SelectedIDs: 94320000
+    m_LastClickedID: 12948
+    m_ExpandedIDs: 00000000ac2c0000c82c0000202e0000a03000003c3100006a32000094320000da3c0000dc3c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -388,7 +388,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e6280000022900005a2a0000da2c0000762d0000a42e0000ce2e00001a3900001c39000000ca9a3b
+    m_ExpandedIDs: 00000000ac2c0000c82c0000202e0000a03000003c3100006a32000094320000da3c0000dc3c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -555,9 +555,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.641154, y: 2.075206, z: 6.146236}
+    m_Target: {x: 12.002535, y: 2.0203466, z: 5.8306994}
     speed: 2
-    m_Value: {x: 11.641154, y: 2.075206, z: 6.146236}
+    m_Value: {x: 12.002535, y: 2.0203466, z: 5.8306994}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -585,13 +585,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.000954537, y: -0.99793714, z: 0.062350027, w: 0.015265715}
+    m_Target: {x: 0.011826167, y: -0.97994286, z: 0.061225772, w: 0.18927146}
     speed: 2
-    m_Value: {x: 0.000954537, y: -0.99793714, z: 0.062350027, w: 0.015265715}
+    m_Value: {x: 0.011826167, y: -0.97994286, z: 0.061225772, w: 0.18927146}
   m_Size:
-    m_Target: 1.1482193
+    m_Target: 2.648219
     speed: 2
-    m_Value: 1.1482193
+    m_Value: 2.648219
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -632,9 +632,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f0310000
-      m_LastClickedID: 12784
-      m_ExpandedIDs: 58f7ffffccfbffffdefbffffa02d0000b42d0000f0310000
+      m_SelectedIDs: 2a360000
+      m_LastClickedID: 13866
+      m_ExpandedIDs: ccfbffff28350000b8350000c4350000da3500002a360000ae360000c6360000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
