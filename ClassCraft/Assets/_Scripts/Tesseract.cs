@@ -9,6 +9,7 @@ public class Tesseract : MonoBehaviour {
     private TesseractDriver _tesseractDriver;
     private string _text = "";
     private Texture2D _texture;
+    // public int answer;
 
     private void Start() {
         Recognize();
@@ -51,4 +52,9 @@ public class Tesseract : MonoBehaviour {
     private void LateUpdate() {
         displayText.text = _text;
     }
+
+    // return integer version of text
+    // public int GetInt() {
+    //     return answer;
+    // }
 }
